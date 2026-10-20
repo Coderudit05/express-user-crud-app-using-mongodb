@@ -59,7 +59,7 @@ app.post("/edit/:id", async (req, res) => {
 });
 
 // Delete Route - Delete a user by ID
-app.get("/delete/:id", async (req, res) => {
+app.post("/delete/:id", async (req, res) => {
   try {
     const userId = req.params.id; // extract id from URL
 
